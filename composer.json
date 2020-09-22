@@ -1,0 +1,39 @@
+{
+    "name": "anvise/laravel-msg",
+    "description": "Sending Messages",
+    "keywords": [
+        "sms",
+        "laravel infobip",
+        "anvise"
+    ],
+    "type": "library",
+    "require": {
+        "illuminate/support": ">=5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AnViSe\\Messages\\": "src"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AnViSe\\Messages\\Providers\\MessageServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AnViSe",
+            "email": "m4avs@list.ru"
+        }
+    ],
+    "minimum-stability": "dev"
+}
